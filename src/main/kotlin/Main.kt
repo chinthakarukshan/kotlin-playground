@@ -78,6 +78,7 @@ fun kotlinMaps() {
 
     println(priceMap)
     println("Mutable price map $mutablePriceMap")
+    println("Price of pumkin is ${mutablePriceMap["pumkin"]}")
 
     println("cabbage" in mutablePriceMap.keys) // Checks if the cabbage contains in the map keys
     println(120 in mutablePriceMap.values) // check if 120 contains in the map values
