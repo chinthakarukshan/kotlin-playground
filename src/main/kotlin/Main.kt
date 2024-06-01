@@ -21,4 +21,12 @@ fun main() {
 
     varOne = 300 // Initializing the variable
 
+    kotlinLists()
+
+}
+
+fun kotlinLists() {
+    println()
+    val readOnlyList = listOf("triangle", "square", "circle")
+    println(readOnlyList)
 }
