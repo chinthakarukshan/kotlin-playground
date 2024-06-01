@@ -58,4 +58,12 @@ fun kotlinSets() {
     var mutableBirdSet : MutableSet<String> = mutableSetOf("Crow", "Parrot", "Piegon", "Piegon")
     println("Mutable Set $mutableBirdSet")
 
+    println("Piegon" in birdSet)
+
+    mutableBirdSet.add("Eagle")
+    mutableBirdSet.remove("Crow")
+
+    println("Set after modification $mutableBirdSet")
+    println("Element count after modification ${mutableBirdSet.count()}")
+
 }
