@@ -23,6 +23,7 @@ fun main() {
 
     kotlinLists()
     kotlinSets()
+    kotlinMaps()
 
 }
 
@@ -66,4 +67,14 @@ fun kotlinSets() {
     println("Set after modification $mutableBirdSet")
     println("Element count after modification ${mutableBirdSet.count()}")
 
+}
+
+fun kotlinMaps() {
+    println("###### KOTLIN MAP ######")
+    val priceMap:Map<String,Int> = mapOf("pumkin" to 200, "cabbage" to 400, "beans" to 100)
+    val mutablePriceMap:MutableMap<String,Int> = mutableMapOf("pumkin" to 200, "cabbage" to 400, "beans" to 100)
+
+
+    println(priceMap)
+    println("Mutable price map $mutablePriceMap")
 }
