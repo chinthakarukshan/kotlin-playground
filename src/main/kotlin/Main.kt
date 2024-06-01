@@ -22,6 +22,7 @@ fun main() {
     varOne = 300 // Initializing the variable
 
     kotlinLists()
+    kotlinSets()
 
 }
 
@@ -47,5 +48,14 @@ fun kotlinLists() {
 
     animals.remove("Lion")
     println("After removing lion from the list $animals")
+
+}
+
+fun kotlinSets() {
+    val birdSet = setOf("Crow", "Parrot", "Piegon", "Piegon");
+    println(birdSet)
+
+    var mutableBirdSet : MutableSet<String> = mutableSetOf("Crow", "Parrot", "Piegon", "Piegon")
+    println("Mutable Set $mutableBirdSet")
 
 }
