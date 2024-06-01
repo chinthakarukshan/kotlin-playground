@@ -26,7 +26,16 @@ fun main() {
 }
 
 fun kotlinLists() {
+    // Read only list
     println()
     val readOnlyList = listOf("triangle", "square", "circle")
     println(readOnlyList)
+
+    //Mutable list. Here the list type is inferred by the compiler
+    val shapes = mutableListOf("triangle", "square", "circle")
+    println(shapes)
+
+    var animals: MutableList<String> = mutableListOf("Dog", "Cat", "Tiger") //List type is explicitly declared
+    println(animals)
+
 }
