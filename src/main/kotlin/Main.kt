@@ -41,4 +41,11 @@ fun kotlinLists() {
     animals.add("Lion");
     println(animals)
 
+    println("The first animal in the list is ${animals[0]}")
+    println("Animals array contains ${animals.count()} items")
+    println("Lion" in animals) // Checks whether a given element exists in the list
+
+    animals.remove("Lion")
+    println("After removing lion from the list $animals")
+
 }
