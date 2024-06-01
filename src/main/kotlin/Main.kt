@@ -24,6 +24,7 @@ fun main() {
     kotlinLists()
     kotlinSets()
     kotlinMaps()
+    kotlinCollectionExcercise()
 
 }
 
@@ -87,4 +88,24 @@ fun kotlinMaps() {
     mutablePriceMap.remove("pumkin")
 
     println("Mutable map after modification $mutablePriceMap")
+}
+
+fun kotlinCollectionExcercise() {
+    println("###### EXERCISE BEGINS ######")
+    val greenNumbers = listOf(1, 4, 23)
+    val redNumbers = listOf(17, 2)
+
+    println("Total Number Count : ${greenNumbers.count() + redNumbers.count()}")
+
+
+    val SUPPORTED = setOf("HTTP", "HTTPS", "FTP")
+    val requested = "SMTP"
+    val isSupported = requested.uppercase() in SUPPORTED// Write your code here
+    println("Support for $requested: $isSupported")
+
+    val number2word = mapOf(1 to "One", 2 to "Two", 3 to "Three")// Write your code here
+    val n = 2
+    println("$n is spelt as '${number2word[n]}'")
+
+
 }
