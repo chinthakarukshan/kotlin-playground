@@ -38,4 +38,7 @@ fun kotlinLists() {
     var animals: MutableList<String> = mutableListOf("Dog", "Cat", "Tiger") //List type is explicitly declared
     println(animals)
 
+    animals.add("Lion");
+    println(animals)
+
 }
