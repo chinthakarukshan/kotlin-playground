@@ -143,4 +143,15 @@ fun kotlinConditionalStatements() {
         "Hello" -> println("Value is Hello")
         else -> println("Didn't receive expected input")
     }
+
+
+    //when as an expression
+
+    val result = when(decisionString) {
+        "1" -> "Value is One"
+        "Hello" -> "Value is Hello"
+        else -> "Unknown"
+    }
+
+    println("When expression result is $result")
 }
