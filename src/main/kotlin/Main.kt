@@ -118,6 +118,8 @@ fun kotlinConditionalStatements() {
     var decisionVariable:Int
     val isCompleted:Boolean = false
 
+    //If as a statement
+
     if (isCompleted) {
         decisionVariable = 2
     } else {
@@ -130,4 +132,15 @@ fun kotlinConditionalStatements() {
     val b=3
 
     println(if(a > b) a else b ) // If as an expression
+
+
+    //when as a statement
+
+    val decisionString = "Hello"
+
+    when(decisionString) {
+        "1" -> println("Value One")
+        "Hello" -> println("Value is Hello")
+        else -> println("Didn't receive expected input")
+    }
 }
