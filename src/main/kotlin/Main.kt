@@ -26,6 +26,9 @@ fun main() {
     kotlinMaps()
     kotlinCollectionExcercise()
 
+
+    kotlinConditionalStatements()
+
 }
 
 fun kotlinLists() {
@@ -109,4 +112,17 @@ fun kotlinCollectionExcercise() {
     println("$n is spelt as '${number2word[n]}'")
 
 
+}
+
+fun kotlinConditionalStatements() {
+    var decisionVariable:Int
+    val isCompleted:Boolean = false
+
+    if (isCompleted) {
+        decisionVariable = 2
+    } else {
+        decisionVariable = 3
+    }
+
+    println("Decision Variable : $decisionVariable")
 }
