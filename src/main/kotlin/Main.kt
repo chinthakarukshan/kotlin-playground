@@ -154,4 +154,16 @@ fun kotlinConditionalStatements() {
     }
 
     println("When expression result is $result")
+
+    //When for boolean comparisons
+
+    val temperature = 18
+
+    val climate = when {
+        temperature < 10 -> "Very Cold"
+        10 <= temperature && 30> temperature -> "Mild"
+        else -> "Hot"
+    }
+
+    println("Climate is $climate")
 }
