@@ -125,4 +125,9 @@ fun kotlinConditionalStatements() {
     }
 
     println("Decision Variable : $decisionVariable")
+
+    val a=1
+    val b=3
+
+    println(if(a > b) a else b ) // If as an expression
 }
