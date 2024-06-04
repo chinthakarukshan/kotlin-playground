@@ -170,7 +170,14 @@ fun kotlinConditionalStatements() {
 }
 
 fun kotlinLoops() {
+
+    val fruits:List<String> = listOf("Apple", "Mango", "Banana", "Pineapple")
+
     for (number in 1..5){
         println(number)
+    }
+
+    for(fruit in fruits) {
+        println(fruit)
     }
 }
