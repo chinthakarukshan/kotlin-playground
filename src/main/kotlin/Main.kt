@@ -28,6 +28,7 @@ fun main() {
 
 
     kotlinConditionalStatements()
+    kotlinLoops()
 
 }
 
@@ -166,4 +167,10 @@ fun kotlinConditionalStatements() {
     }
 
     println("Climate is $climate")
+}
+
+fun kotlinLoops() {
+    for (number in 1..5){
+        println(number)
+    }
 }
