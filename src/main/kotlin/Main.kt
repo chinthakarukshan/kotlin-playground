@@ -29,6 +29,7 @@ fun main() {
 
     kotlinConditionalStatements()
     kotlinLoops()
+    conditionalStatementAssignment()
 
 }
 
@@ -195,4 +196,15 @@ fun kotlinLoops() {
     } while(doCount < count)
 
 
+}
+
+fun conditionalStatementAssignment () {
+    val button="A"
+    when(button) {
+        "A" -> println("Yes")
+        "B" -> println("No")
+        "X" -> println("Menu")
+        "Y" -> println("Nothing")
+        else -> println("There is no such button")
+    }
 }
