@@ -180,4 +180,19 @@ fun kotlinLoops() {
     for(fruit in fruits) {
         println(fruit)
     }
+
+    var count = 0
+    var doCount = 0
+
+    while (count < 3) {
+        println("Count is $count")
+        count++
+    }
+
+    do {
+        println("Do Count $doCount")
+        doCount++
+    } while(doCount < count)
+
+
 }
