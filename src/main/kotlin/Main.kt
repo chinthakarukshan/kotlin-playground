@@ -233,4 +233,17 @@ fun conditionalStatementAssignment () {
 
     pizzaSlices_V2++
     println("There are $pizzaSlices_V2 slices of pizza. Hooray! We have a whole pizza! :D")
+
+
+    //pizza slices do-while
+
+    var pizzaSliceCount=0
+
+    pizzaSliceCount++
+
+    do{
+        println("There's only $pizzaSliceCount slice/s of pizza :(")
+        pizzaSliceCount++
+    } while(pizzaSliceCount<8)
+    println("There are $pizzaSliceCount slices of pizza. Hooray! We have a whole pizza! :D")
 }
