@@ -246,4 +246,19 @@ fun conditionalStatementAssignment () {
         pizzaSliceCount++
     } while(pizzaSliceCount<8)
     println("There are $pizzaSliceCount slices of pizza. Hooray! We have a whole pizza! :D")
+
+
+    //fizz-buzz assignment
+    fizzbuzz()
+}
+
+fun fizzbuzz() {
+    for(number in 1..100) {
+        when {
+            (number%3==0 && number%5==0) -> println("fizzbuzz")
+            number%3==0 -> println("fizz")
+            number%5==0 -> println("buzz")
+            else -> println(number)
+        }
+    }
 }
