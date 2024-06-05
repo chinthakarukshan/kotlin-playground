@@ -36,6 +36,10 @@ fun main() {
 
     println(sum(5,3))
 
+    //Named arguments
+    printMessageWithPrefix(prefix = "Log", message = "Hello")
+    printMessageWithPrefix(message = "Issue", prefix = "ERROR")
+
 }
 
 fun kotlinLists() {
@@ -281,4 +285,8 @@ fun fizzbuzz() {
 
 fun sum(x: Int, y: Int): Int {
     return x + y
+}
+
+fun printMessageWithPrefix(prefix: String, message: String){
+    println("[$prefix] $message")
 }
