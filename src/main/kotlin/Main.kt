@@ -39,6 +39,7 @@ fun main() {
     //Named arguments
     printMessageWithPrefix(prefix = "Log", message = "Hello")
     printMessageWithPrefix(message = "Issue", prefix = "ERROR")
+    printMessageWithPrefix("Request Received")
 
 }
 
@@ -287,6 +288,6 @@ fun sum(x: Int, y: Int): Int {
     return x + y
 }
 
-fun printMessageWithPrefix(prefix: String, message: String){
+fun printMessageWithPrefix(message: String, prefix: String = "Info"){
     println("[$prefix] $message")
 }
