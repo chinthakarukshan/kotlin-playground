@@ -31,6 +31,11 @@ fun main() {
     kotlinLoops()
     conditionalStatementAssignment()
 
+
+    //Kotlin Methods
+
+    println(sum(5,3))
+
 }
 
 fun kotlinLists() {
@@ -272,4 +277,8 @@ fun fizzbuzz() {
             else -> println(number)
         }
     }
+}
+
+fun sum(x: Int, y: Int): Int {
+    return x + y
 }
