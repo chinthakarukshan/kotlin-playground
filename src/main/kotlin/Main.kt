@@ -207,4 +207,30 @@ fun conditionalStatementAssignment () {
         "Y" -> println("Nothing")
         else -> println("There is no such button")
     }
+
+
+    //Pizza slices assignment
+
+    var pizzaSlices=0
+    pizzaSlices++
+
+    while (pizzaSlices <= 8) {
+        if (pizzaSlices == 8) {
+            println("There are $pizzaSlices slices of pizza. Hooray! We have a whole pizza! :D")
+        } else {
+            println("There's only $pizzaSlices slice/s of pizza :(")
+        }
+        pizzaSlices++
+    }
+
+    //Pizza slices assignment-v2
+
+    var pizzaSlices_V2=0
+    while (pizzaSlices_V2 < 7) {
+        println("There's only $pizzaSlices_V2 slice/s of pizza :(")
+        pizzaSlices_V2++
+    }
+
+    pizzaSlices_V2++
+    println("There are $pizzaSlices_V2 slices of pizza. Hooray! We have a whole pizza! :D")
 }
