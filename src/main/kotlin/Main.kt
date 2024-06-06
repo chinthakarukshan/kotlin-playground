@@ -1,5 +1,7 @@
 package org.example
 
+import kotlin.math.PI
+
 fun main() {
     val varOne:Int; //Variable declaration without initialization
     val name="Mary"
@@ -41,6 +43,7 @@ fun main() {
     printMessageWithPrefix(message = "Issue", prefix = "ERROR")
     printMessageWithPrefix("Request Received")
     println(sumShortened(5,7))
+    println(circleArea(2))
 
 }
 
@@ -294,3 +297,7 @@ fun printMessageWithPrefix(message: String, prefix: String = "Info"){
 }
 
 fun sumShortened(x: Int, y: Int) = x + y
+
+fun circleArea(radius: Int): Double {
+    return PI * radius * radius
+}
