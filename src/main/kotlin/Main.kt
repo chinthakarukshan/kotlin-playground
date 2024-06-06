@@ -59,6 +59,19 @@ fun main() {
     println({text: String -> text.uppercase()}("Hello Lambda"))
     println(upperCaseStringLambda("lambda as a reference"))
 
+    val numbers = listOf(3,6,8,-3,-6,-8)
+    val positiveNumbers = numbers.filter { x -> x > 0 }
+    val negativeNumbers = numbers.filter { x -> x < 0 }
+
+    println(positiveNumbers)
+    println(negativeNumbers)
+
+    val doubledNumbers = numbers.map { x -> x * 2 }
+    val tripledNumbers = numbers.map { x -> x * 3 }
+
+    println(doubledNumbers)
+    println(tripledNumbers)
+
 }
 
 fun kotlinLists() {
