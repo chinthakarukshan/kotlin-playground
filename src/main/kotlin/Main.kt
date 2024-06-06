@@ -53,6 +53,11 @@ fun main() {
     println(intervalInSeconds(minutes = 10))
     println(intervalInSeconds(hours = 1, minutes =  1))
 
+
+    //Lambda Functions
+
+    println({text: String -> text.uppercase()}("Hello Lambda"))
+
 }
 
 fun kotlinLists() {
@@ -314,3 +319,4 @@ fun circleAreaShortened(radius: Int) : Double = PI * radius * radius
 
 fun intervalInSeconds(hours: Int = 0, minutes: Int = 0, seconds: Int = 0) =
     ((hours * 60) + minutes) * 60 + seconds
+
