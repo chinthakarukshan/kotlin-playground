@@ -46,6 +46,13 @@ fun main() {
     println(circleArea(2))
     println(circleAreaShortened(2))
 
+
+    println(intervalInSeconds(1, 20, 15))
+    println(intervalInSeconds(minutes = 1, seconds = 25))
+    println(intervalInSeconds(2))
+    println(intervalInSeconds(minutes = 10))
+    println(intervalInSeconds(hours = 1, minutes =  1))
+
 }
 
 fun kotlinLists() {
@@ -304,3 +311,6 @@ fun circleArea(radius: Int): Double {
 }
 
 fun circleAreaShortened(radius: Int) : Double = PI * radius * radius
+
+fun intervalInSeconds(hours: Int = 0, minutes: Int = 0, seconds: Int = 0) =
+    ((hours * 60) + minutes) * 60 + seconds
