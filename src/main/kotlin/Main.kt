@@ -57,6 +57,7 @@ fun main() {
     //Lambda Functions
 
     println({text: String -> text.uppercase()}("Hello Lambda"))
+    println(upperCaseStringLambda("lambda as a reference"))
 
 }
 
@@ -320,3 +321,4 @@ fun circleAreaShortened(radius: Int) : Double = PI * radius * radius
 fun intervalInSeconds(hours: Int = 0, minutes: Int = 0, seconds: Int = 0) =
     ((hours * 60) + minutes) * 60 + seconds
 
+val upperCaseStringLambda = {text: String -> text.uppercase()}
