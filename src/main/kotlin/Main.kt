@@ -40,6 +40,7 @@ fun main() {
     printMessageWithPrefix(prefix = "Log", message = "Hello")
     printMessageWithPrefix(message = "Issue", prefix = "ERROR")
     printMessageWithPrefix("Request Received")
+    println(sumShortened(5,7))
 
 }
 
@@ -291,3 +292,5 @@ fun sum(x: Int, y: Int): Int {
 fun printMessageWithPrefix(message: String, prefix: String = "Info"){
     println("[$prefix] $message")
 }
+
+fun sumShortened(x: Int, y: Int) = x + y
