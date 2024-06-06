@@ -44,6 +44,7 @@ fun main() {
     printMessageWithPrefix("Request Received")
     println(sumShortened(5,7))
     println(circleArea(2))
+    println(circleAreaShortened(2))
 
 }
 
@@ -301,3 +302,5 @@ fun sumShortened(x: Int, y: Int) = x + y
 fun circleArea(radius: Int): Double {
     return PI * radius * radius
 }
+
+fun circleAreaShortened(radius: Int) : Double = PI * radius * radius
