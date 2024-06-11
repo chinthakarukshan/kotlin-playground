@@ -77,6 +77,12 @@ fun main() {
     val minuteToSecond = toSeconds("Minute")
     val totalSeconds = timeInMinutes.map(minuteToSecond).sum()
     println("Total time is $totalSeconds seconds")
+
+    //Trailing Lambdas.
+    println(numbers.map{y -> y * 2}) // No () in the map method
+
+    println(listOf(3,5,8).fold(0,{x, item -> x + item})) // This can be converted to trailing lambda like below
+    println(listOf(3,5,8).fold(0){x, item -> x + item})
 }
 
 fun kotlinLists() {
