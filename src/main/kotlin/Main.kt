@@ -83,6 +83,8 @@ fun main() {
 
     println(listOf(3,5,8).fold(0,{x, item -> x + item})) // This can be converted to trailing lambda like below
     println(listOf(3,5,8).fold(0){x, item -> x + item})
+
+    lambdaURLBuilder()
 }
 
 fun kotlinLists() {
@@ -353,4 +355,13 @@ fun toSeconds(type: String): (Int) -> Int = when (type) {
     "Hour" -> {value -> value * 60 * 60}
     "Minute" -> {value -> value * 60}
     else -> {value -> value}
+}
+
+fun lambdaURLBuilder() {
+    val actions = listOf("title", "year", "author")
+    val prefix = "https://example.com/book-info"
+    val id = 5
+    val urls = actions.map{ operation -> "$prefix/$id/$operation"}
+    println(urls)
+
 }
