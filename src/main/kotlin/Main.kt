@@ -72,6 +72,11 @@ fun main() {
     println(doubledNumbers)
     println(tripledNumbers)
 
+    // Return lambda expressions from a function
+    val timeInMinutes = listOf(3,5,4,2);
+    val minuteToSecond = toSeconds("Minute")
+    val totalSeconds = timeInMinutes.map(minuteToSecond).sum()
+    println("Total time is $totalSeconds seconds")
 }
 
 fun kotlinLists() {
@@ -337,3 +342,9 @@ fun intervalInSeconds(hours: Int = 0, minutes: Int = 0, seconds: Int = 0) =
 val upperCaseStringLambda = {text: String -> text.uppercase()}
 
 val upperCaseStringLambdaFunctiontype: (String) -> String = {text: String -> text.uppercase()}
+
+fun toSeconds(type: String): (Int) -> Int = when (type) {
+    "Hour" -> {value -> value * 60 * 60}
+    "Minute" -> {value -> value * 60}
+    else -> {value -> value}
+}
