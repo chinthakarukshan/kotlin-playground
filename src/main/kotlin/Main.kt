@@ -85,6 +85,9 @@ fun main() {
     println(listOf(3,5,8).fold(0){x, item -> x + item})
 
     lambdaURLBuilder()
+
+    repeatN(5,{ println("Hello") })
+    repeatN(5){ println("Hello Trailing Lambda") }
 }
 
 fun kotlinLists() {
@@ -364,4 +367,10 @@ fun lambdaURLBuilder() {
     val urls = actions.map{ operation -> "$prefix/$id/$operation"}
     println(urls)
 
+}
+
+fun repeatN(n: Int, action: () -> Unit) {
+    for (count in 1..n) {
+        action()
+    }
 }
