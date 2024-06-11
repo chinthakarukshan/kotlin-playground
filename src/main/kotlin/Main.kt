@@ -335,3 +335,5 @@ fun intervalInSeconds(hours: Int = 0, minutes: Int = 0, seconds: Int = 0) =
     ((hours * 60) + minutes) * 60 + seconds
 
 val upperCaseStringLambda = {text: String -> text.uppercase()}
+
+val upperCaseStringLambdaFunctiontype: (String) -> String = {text: String -> text.uppercase()}
