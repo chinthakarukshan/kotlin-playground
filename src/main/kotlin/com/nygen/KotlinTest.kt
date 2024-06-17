@@ -22,4 +22,8 @@ fun main() {
     println("userOne == userTwo : ${userOne == userTwo}")
 
     println("userOne == userThree: ${userOne == userThree}")
+
+    println(userOne.copy())
+    println(userOne.copy("David"))
+    println(userOne.copy(id = 4))
 }
