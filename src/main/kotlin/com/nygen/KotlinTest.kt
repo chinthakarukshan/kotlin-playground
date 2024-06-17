@@ -1,5 +1,6 @@
 package org.example.com.nygen
 
+import org.example.com.nygen.data.Employee
 import org.example.com.nygen.data.User
 
 fun main() {
@@ -26,4 +27,10 @@ fun main() {
     println(userOne.copy())
     println(userOne.copy("David"))
     println(userOne.copy(id = 4))
+
+    //Exercise 01
+    val emp = Employee("Mary", 20)
+    println(emp)
+    emp.salary += 10
+    println(emp)
 }
