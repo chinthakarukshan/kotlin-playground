@@ -11,8 +11,15 @@ fun main() {
     contact.printId()
 
     val userOne = User("Alex",1)
+    val userTwo = User("Alex", 1)
+    val userThree = User("John", 2)
 
     val userOneString = userOne.toString()
     println(userOneString)
     println(userOne)
+
+    //Comparing instances using ==
+    println("userOne == userTwo : ${userOne == userTwo}")
+
+    println("userOne == userThree: ${userOne == userThree}")
 }
