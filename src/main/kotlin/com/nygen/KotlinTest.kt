@@ -8,6 +8,8 @@ fun main() {
     println(contact.email)
     println("Id of the object is: ${contact.id}")
 
+    contact.printId()
+
     val userOne = User("Alex",1)
 
     val userOneString = userOne.toString()
