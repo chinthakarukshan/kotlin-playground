@@ -15,6 +15,11 @@ fun main() {
     //Compilation error. Doesn't allow null
     //inferredNonNull=null
 
+    fun strLength(notNull:String): Int {
+        return notNull.length
+    }
 
+    println(strLength(neverNull))
+    //println(strLength(nullable)) //Compilation error. Method doesn't accept nullable values
 
 }
