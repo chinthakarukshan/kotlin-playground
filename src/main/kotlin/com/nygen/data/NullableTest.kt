@@ -24,6 +24,9 @@ fun main() {
 
     println(describeSomething(nullable))
 
+    println(lengthStringSafe(nullable))
+    println(lengthStringSafe(neverNull))
+
 }
 
 fun describeSomething(mayBeString:String?): String {
@@ -33,3 +36,5 @@ fun describeSomething(mayBeString:String?): String {
         return "Empty or null string"
     }
 }
+
+fun lengthStringSafe(mayBeString: String?): Int? = mayBeString?.length
