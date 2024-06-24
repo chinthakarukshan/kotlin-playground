@@ -29,6 +29,8 @@ fun main() {
 
     println(nullable?.length)
 
+    println(nullable?.length ?: 0)
+
 }
 
 fun describeSomething(mayBeString:String?): String {
