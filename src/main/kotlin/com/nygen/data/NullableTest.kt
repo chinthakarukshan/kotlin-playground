@@ -6,4 +6,9 @@ fun main() {
     //This cannot never be null. Compilation error
     //neverNull = null
 
+    var nullable:String?="This can be nullable"
+
+    nullable=null
+
+
 }
