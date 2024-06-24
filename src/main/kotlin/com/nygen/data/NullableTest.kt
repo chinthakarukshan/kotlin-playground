@@ -22,4 +22,14 @@ fun main() {
     println(strLength(neverNull))
     //println(strLength(nullable)) //Compilation error. Method doesn't accept nullable values
 
+    println(describeSomething(nullable))
+
+}
+
+fun describeSomething(mayBeString:String?): String {
+    if (mayBeString != null && mayBeString.length > 0) {
+        return "String of length ${mayBeString.length}"
+    } else {
+        return "Empty or null string"
+    }
 }
