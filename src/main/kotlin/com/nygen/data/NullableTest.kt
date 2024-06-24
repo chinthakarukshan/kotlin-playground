@@ -31,6 +31,8 @@ fun main() {
 
     println(nullable?.length ?: 0)
 
+    println((1..5).sumOf { id -> salaryById(id) })
+
 }
 
 fun describeSomething(mayBeString:String?): String {
@@ -42,3 +44,14 @@ fun describeSomething(mayBeString:String?): String {
 }
 
 fun lengthStringSafe(mayBeString: String?): Int? = mayBeString?.length
+
+fun employeeById(id: Int) = when(id) {
+    1 -> Employee("Mary", 20)
+    2 -> null
+    3 -> Employee("John", 21)
+    4 -> Employee("Ann", 23)
+    else -> null
+}
+
+fun salaryById(id: Int) = employeeById(id)?.salary ?: 0
+
