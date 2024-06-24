@@ -10,5 +10,11 @@ fun main() {
 
     nullable=null
 
+    var inferredNonNull = "Inferred value. compiler doesn't allow assigning null"
+
+    //Compilation error. Doesn't allow null
+    //inferredNonNull=null
+
+
 
 }
