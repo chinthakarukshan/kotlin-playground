@@ -1,0 +1,21 @@
+package com.nygen.com
+
+//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
+// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
+fun main() {
+    val wordArray1 = arrayOf("24/7","multi-tier","B-To-B","dynamic","pervasive")
+    val wordArray2 = arrayOf("empowered","leveraged","aligned","targeted")
+    val wordArray3 = arrayOf("process","paradigm","solution","portal","vision")
+
+    val arraySize1 = wordArray1.size
+    val arraySize2 = wordArray2.size
+    val arraySize3 = wordArray3.size
+
+    val rand1 = (Math.random()*arraySize1).toInt()
+    val rand2 = (Math.random()*arraySize2).toInt()
+    val rand3 = (Math.random()*arraySize3).toInt()
+
+    val parse = "${wordArray1[rand1]} ${wordArray2[rand2]} ${wordArray3[rand3]}"
+
+    println(parse)
+}
