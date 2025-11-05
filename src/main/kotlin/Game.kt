@@ -2,6 +2,7 @@ fun main(args: Array<String>) {
     val options = arrayOf("Rock","Paper","Scissors")
     val gameChoice = getGameChoice(options)
     val userChoice = getUserChoice(options)
+    printResult(userChoice,gameChoice)
 }
 
 fun getGameChoice(optionsParam: Array<String>) = optionsParam[(Math.random() * optionsParam.size).toInt()]
@@ -26,4 +27,15 @@ fun getUserChoice(optionsParam: Array<String>):String {
     }
 
     return usersChoice
+}
+
+fun printResult(userChoice: String,gameChoice:String) {
+    var result:String
+    if(userChoice == gameChoice) result="Tie!"
+    else if((userChoice == "Rock" && gameChoice =="Scissors") ||
+        (userChoice=="Scissors" && gameChoice=="Paper") ||
+        (userChoice=="Paper" && gameChoice=="Rock")) result="You win!"
+    else result="You lose!"
+
+    println("You chose $userChoice. I chose $gameChoice. $result")
 }
