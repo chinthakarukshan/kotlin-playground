@@ -1,6 +1,6 @@
 package com.nygen.animal
 
-class Duck {
+class Duck (){
     fun quack(){
         println("Quack! Quack! Quack!")
     }
