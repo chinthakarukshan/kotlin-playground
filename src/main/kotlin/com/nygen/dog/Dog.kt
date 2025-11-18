@@ -1,6 +1,6 @@
 package com.nygen.dog
 
-class Dog(val name:String, var weight: Int,breed_param:String) {
+class Dog(val name:String, var weight_param: Int,breed_param:String) {
 
     var activities = arrayOf("Walks")
     init {
@@ -16,4 +16,9 @@ class Dog(val name:String, var weight: Int,breed_param:String) {
 
     val weightInKgs: Double
         get() = weight/2.2  // Getter or accessor of weightInKgs property
+
+    var weight = weight_param
+        set(value) {
+            if(value > 0) field = value
+        }
 }
