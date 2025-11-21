@@ -1,20 +1,20 @@
 package com.nygen.inherit
 
-class Animal {
-    val image = ""
-    val foot = ""
-    val habitat = ""
+open class Animal {
+    open val image = ""
+    open val foot = ""
+    open val habitat = ""
     val hunger = 10
 
-    fun makeNoise() {
+    open fun makeNoise() {
         println("The animal is making a noise")
     }
 
-    fun eat() {
+    open fun eat() {
         println("The animal is eating")
     }
 
-    fun roam() {
+    open fun roam() {
         println("The animal is roaming")
     }
 
