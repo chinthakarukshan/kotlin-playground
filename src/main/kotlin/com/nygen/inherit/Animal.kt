@@ -2,7 +2,7 @@ package com.nygen.inherit
 
 open class Animal {
     open val image = ""
-    open val foot = ""
+    open val food = ""
     open val habitat = ""
     val hunger = 10
 
