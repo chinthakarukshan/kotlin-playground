@@ -6,4 +6,12 @@ class Hippo: Animal() {
     override val food = "grass"
 
     override val habitat = "water"
+
+    override fun makeNoise() {
+        println("Grut! Grut!")
+    }
+
+    override fun eat() {
+        println("The hippo is eating $food")
+    }
 }
