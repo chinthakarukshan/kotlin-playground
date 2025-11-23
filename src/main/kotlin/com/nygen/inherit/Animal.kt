@@ -1,9 +1,9 @@
 package com.nygen.inherit
 
 abstract class Animal {
-    open val image = ""
-    open val food = ""
-    open val habitat = ""
+    abstract val image: String
+    abstract val food: String
+    abstract val habitat: String
     val hunger = 10
 
     open fun makeNoise() {
