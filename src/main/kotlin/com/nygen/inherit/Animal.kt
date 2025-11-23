@@ -1,6 +1,6 @@
 package com.nygen.inherit
 
-open class Animal {
+abstract class Animal {
     open val image = ""
     open val food = ""
     open val habitat = ""
