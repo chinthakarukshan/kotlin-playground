@@ -16,4 +16,6 @@ fun main(args: Array<String>) {
     for (animal in animals) {
         vet.giveShot(animal)
     }
+
+
 }
