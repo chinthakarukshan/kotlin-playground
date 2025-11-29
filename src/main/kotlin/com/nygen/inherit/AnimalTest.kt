@@ -17,5 +17,10 @@ fun main(args: Array<String>) {
         vet.giveShot(animal)
     }
 
+    val roamables = arrayOf(Hippo(), Vehicle(), Wolf())
+    for(roamable in roamables) {
+        roamable.roam()
+    }
+
 
 }
