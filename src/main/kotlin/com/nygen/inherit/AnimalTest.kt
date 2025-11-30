@@ -23,6 +23,12 @@ fun main(args: Array<String>) {
         if(roamable is Animal) {
             roamable.eat()
         }
+        when(roamable) {
+            is Hippo -> roamable.eat()
+            is Wolf -> roamable.makeNoise()
+            else -> roamable.roam()
+
+        }
     }
 
 
