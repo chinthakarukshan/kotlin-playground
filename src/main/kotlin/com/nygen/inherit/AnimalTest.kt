@@ -20,6 +20,9 @@ fun main(args: Array<String>) {
     val roamables = arrayOf(Hippo(), Vehicle(), Wolf())
     for(roamable in roamables) {
         roamable.roam()
+        if(roamable is Animal) {
+            roamable.eat()
+        }
     }
 
 
