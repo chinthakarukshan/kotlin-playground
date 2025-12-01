@@ -9,4 +9,9 @@ fun main(args: Array<String>){
     }
     println(r1.toString())
     println(r2.toString())
+
+    var r3 = Recipe("Thai curry",false)
+    var r4 = r3.copy(isVegetarian = false)
+
+    println(r3.component1())
 }
