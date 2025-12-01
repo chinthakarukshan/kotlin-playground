@@ -7,4 +7,6 @@ fun main(args: Array<String>){
     if(r1==r2) {
         println("Two recipes are equal")
     }
+    println(r1.toString())
+    println(r2.toString())
 }
