@@ -19,4 +19,5 @@ fun main(args: Array<String>) {
     println("$title $isVegi")
     println(if (r1 == r2) "Object equivalant" else "false")
     println(if (r1 === r2) "Object identical" else "objects are not identical")
+    println("r1 hashcode: ${r1.hashCode()}")
 }
