@@ -14,4 +14,7 @@ fun main(args: Array<String>){
     var r4 = r3.copy(isVegetarian = false)
 
     println(r3.component1())
+
+    val(title,isVegi) = r3
+    println("$title $isVegi")
 }
