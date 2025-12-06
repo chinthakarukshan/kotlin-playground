@@ -33,4 +33,21 @@ fun main(args: Array<String>) {
     var r8 = Recipe(mainIngredient = "Beef", title = "Fried Rice", isVegetarian = false)
 
     var mushroom = Mushroom(true)
+
+
+}
+
+fun findReceips(title:String = "",
+                ingredient:String = "",
+                isVegetarian: Boolean = false,
+                difficulty:String = ""): Array<Recipe> {
+    return arrayOf(Recipe(title,isVegetarian,ingredient,difficulty))
+}
+
+fun addNumbers(a: Int, b: Int): Int {
+    return a+b
+}
+
+fun addNumbers(a: Double,b: Double): Double {
+    return a+b
 }
