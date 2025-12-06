@@ -30,4 +30,5 @@ fun main(args: Array<String>) {
     println(r5==r6)
 
     var r7 = Recipe(title="Spaghetti Bolognese", isVegetarian = false, mainIngredient = "Beef")
+    var r8 = Recipe(mainIngredient = "Beef", title = "Fried Rice", isVegetarian = false)
 }
