@@ -34,7 +34,8 @@ fun main(args: Array<String>) {
 
     var mushroom = Mushroom(true)
 
-
+    println(addNumbers(3,2))
+    println(addNumbers(3.6,7.8))
 }
 
 fun findReceips(title:String = "",
