@@ -28,4 +28,6 @@ fun main(args: Array<String>) {
     r6.mainIngredient = "Duck"
 
     println(r5==r6)
+
+    var r7 = Recipe(title="Spaghetti Bolognese", isVegetarian = false, mainIngredient = "Beef")
 }
