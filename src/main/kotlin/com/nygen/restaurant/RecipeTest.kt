@@ -31,4 +31,6 @@ fun main(args: Array<String>) {
 
     var r7 = Recipe(title="Spaghetti Bolognese", isVegetarian = false, mainIngredient = "Beef")
     var r8 = Recipe(mainIngredient = "Beef", title = "Fried Rice", isVegetarian = false)
+
+    var mushroom = Mushroom(true)
 }
