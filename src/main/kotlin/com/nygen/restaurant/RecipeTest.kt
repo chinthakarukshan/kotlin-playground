@@ -44,6 +44,8 @@ fun main(args: Array<String>) {
     printInt(null)
 
     println(getResult(true))
+
+    var nullableArray: Array<String?> = arrayOf("test",null)
 }
 
 fun findReceips(title:String = "",
