@@ -40,6 +40,8 @@ fun main(args: Array<String>) {
     var nullableMushroom: Mushroom? = Mushroom(true)
 
     nullableMushroom = null
+
+    printInt(null)
 }
 
 fun findReceips(title:String = "",
@@ -55,4 +57,8 @@ fun addNumbers(a: Int, b: Int): Int {
 
 fun addNumbers(a: Double,b: Double): Double {
     return a+b
+}
+
+fun printInt(value: Int?) {
+    println(value)
 }
