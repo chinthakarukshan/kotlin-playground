@@ -42,6 +42,8 @@ fun main(args: Array<String>) {
     nullableMushroom = null
 
     printInt(null)
+
+    println(getResult(true))
 }
 
 fun findReceips(title:String = "",
@@ -61,4 +63,11 @@ fun addNumbers(a: Double,b: Double): Double {
 
 fun printInt(value: Int?) {
     println(value)
+}
+
+fun getResult(param: Boolean):Long? {
+    if (param) {
+        return null
+    }
+    return 6
 }
