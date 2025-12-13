@@ -1,5 +1,7 @@
 package com.nygen.inherit
 
+import com.nygen.restaurant.printInt
+
 fun main(args: Array<String>) {
    /* val wolf = Wolf()
     wolf.eat()
@@ -31,5 +33,12 @@ fun main(args: Array<String>) {
         }
     }
 
+    var myWolf: MyWolf? = MyWolf()
 
+    println(myWolf?.w?.hunger)
+
+}
+
+class MyWolf() {
+    var w: Wolf? = Wolf()
 }
