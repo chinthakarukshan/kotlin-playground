@@ -38,6 +38,8 @@ fun main(args: Array<String>) {
     println(addNumbers(3.6,7.8))
 
     var nullableMushroom: Mushroom? = Mushroom(true)
+
+    nullableMushroom = null
 }
 
 fun findReceips(title:String = "",
