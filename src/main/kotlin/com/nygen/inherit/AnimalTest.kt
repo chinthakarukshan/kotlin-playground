@@ -37,8 +37,15 @@ fun main(args: Array<String>) {
 
     println(myWolf?.w?.hunger)
 
+    myWolf?.printHunger()
 }
 
 class MyWolf() {
     var w: Wolf? = Wolf()
+
+    fun printHunger() {
+        w?.let {
+            println(it.hunger)
+        }
+    }
 }
