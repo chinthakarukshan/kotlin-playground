@@ -50,6 +50,10 @@ fun main(args: Array<String>) {
 
     getAlphaWolf(true)?.let { println(it.eat()) }
     getAlphaWolf(false)?.let { println(it.eat())}
+
+    var wolf:Wolf? = Wolf()
+    wolf = null
+    var z = wolf!!.hunger
 }
 
 fun getAlphaWolf(alpha: Boolean): Wolf? {
