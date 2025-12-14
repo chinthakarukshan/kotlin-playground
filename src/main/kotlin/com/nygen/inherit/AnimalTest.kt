@@ -38,6 +38,7 @@ fun main(args: Array<String>) {
     println(myWolf?.w?.hunger)
 
     myWolf?.printHunger()
+    println(myWolf?.getHunger())
 
     var names = arrayOf("Nuhan","Tesandu",null)
 
@@ -62,5 +63,9 @@ class MyWolf() {
         w?.let {
             println(it.hunger)
         }
+    }
+
+    fun getHunger(): Int {
+        return w?.hunger ?: -1
     }
 }
