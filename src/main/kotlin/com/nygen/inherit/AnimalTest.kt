@@ -38,6 +38,14 @@ fun main(args: Array<String>) {
     println(myWolf?.w?.hunger)
 
     myWolf?.printHunger()
+
+    var names = arrayOf("Nuhan","Tesandu",null)
+
+    for (name in names) {
+        name?.let {
+            println(it)
+        }
+    }
 }
 
 class MyWolf() {
