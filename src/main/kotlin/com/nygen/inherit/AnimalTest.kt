@@ -46,6 +46,13 @@ fun main(args: Array<String>) {
             println(it)
         }
     }
+
+    getAlphaWolf(true)?.let { println(it.eat()) }
+    getAlphaWolf(false)?.let { println(it.eat())}
+}
+
+fun getAlphaWolf(alpha: Boolean): Wolf? {
+    return if(alpha) Wolf() else null
 }
 
 class MyWolf() {
