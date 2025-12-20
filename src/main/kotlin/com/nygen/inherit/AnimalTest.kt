@@ -54,6 +54,12 @@ fun main(args: Array<String>) {
     myFunction("6")
     myFunction("Test this")
 
+    try {
+        setWorkRatePercentation(101)
+    } catch (e: IllegalArgumentException) {
+        println(e.printStackTrace())
+    }
+
     var wolf:Wolf? = Wolf()
     wolf = null
     var z = wolf!!.hunger
@@ -73,6 +79,12 @@ fun myFunction(str: String) {
     }
 
     println("myFunction has ended")
+}
+
+fun setWorkRatePercentation(x:Int) {
+    if (x !in 0..100) {
+        throw IllegalArgumentException("Percentation is not in range for x: $x")
+    }
 }
 
 class MyWolf() {
