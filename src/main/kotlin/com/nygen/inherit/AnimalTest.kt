@@ -99,6 +99,7 @@ class MyWolf() {
     }
 
     fun getHunger(): Int {
+        val h = w?.hunger ?: throw AnimalException()
         return w?.hunger ?: -1
     }
 }
