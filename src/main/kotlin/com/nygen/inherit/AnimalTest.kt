@@ -64,8 +64,14 @@ fun getAlphaWolf(alpha: Boolean): Wolf? {
 }
 
 fun myFunction(str: String) {
-    val number = str.toInt()
-    println(number)
+
+    try {
+        val number = str.toInt()
+        println(number)
+    } catch (e: NumberFormatException) {
+        println("Bummer")
+    }
+
     println("myFunction has ended")
 }
 
