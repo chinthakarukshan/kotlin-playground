@@ -71,6 +71,8 @@ fun getAlphaWolf(alpha: Boolean): Wolf? {
 
 fun myFunction(str: String) {
 
+    var result = try {str.toInt()} catch (e: Exception) {null}
+
     try {
         val number = str.toInt()
         println(number)
