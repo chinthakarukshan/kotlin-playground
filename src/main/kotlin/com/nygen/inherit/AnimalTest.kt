@@ -51,6 +51,9 @@ fun main(args: Array<String>) {
     getAlphaWolf(true)?.let { println(it.eat()) }
     getAlphaWolf(false)?.let { println(it.eat())}
 
+    myFunction("6")
+    myFunction("Test this")
+
     var wolf:Wolf? = Wolf()
     wolf = null
     var z = wolf!!.hunger
@@ -58,6 +61,12 @@ fun main(args: Array<String>) {
 
 fun getAlphaWolf(alpha: Boolean): Wolf? {
     return if(alpha) Wolf() else null
+}
+
+fun myFunction(str: String) {
+    val number = str.toInt()
+    println(number)
+    println("myFunction has ended")
 }
 
 class MyWolf() {
