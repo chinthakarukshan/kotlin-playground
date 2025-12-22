@@ -16,4 +16,11 @@ fun main(args: Array<String>) {
     mutableShopping.add(1,"Biscuit")
 
     mutableShopping.forEach { print(",$it") }
+
+    if(mutableShopping.contains("Biscuit")) {
+        mutableShopping.remove("Biscuit")
+    }
+    println()
+
+    mutableShopping.forEach { print(",$it") }
 }
