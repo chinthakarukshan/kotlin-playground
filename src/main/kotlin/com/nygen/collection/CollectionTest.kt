@@ -8,4 +8,12 @@ fun main(args: Array<String>) {
     }
 
     val mutableShopping = mutableListOf("Tea","Eggs")
+
+    mutableShopping.add("Milk")
+
+    mutableShopping.forEach { print(",$it") }
+
+    mutableShopping.add(1,"Biscuit")
+
+    mutableShopping.forEach { print(",$it") }
 }
