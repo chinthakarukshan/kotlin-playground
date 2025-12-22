@@ -23,4 +23,10 @@ fun main(args: Array<String>) {
     println()
 
     mutableShopping.forEach { print(",$it") }
+
+    if (mutableShopping.size > 0) {
+        mutableShopping.set(0,"Coffee")
+    }
+    println()
+    mutableShopping.forEach { print(",$it") }
 }
