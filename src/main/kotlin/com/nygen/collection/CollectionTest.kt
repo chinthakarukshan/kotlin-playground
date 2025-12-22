@@ -6,4 +6,6 @@ fun main(args: Array<String>) {
     if (shopping.size > 0) {
         println(shopping[0])
     }
+
+    val mutableShopping = mutableListOf("Tea","Eggs")
 }
