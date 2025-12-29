@@ -45,4 +45,8 @@ fun main(args: Array<String>) {
     println()
     mutableShopping.forEach { print(",$it") }
 
+    mutableShopping.clear()
+    println()
+    mutableShopping.forEach { print(",$it") }
+
 }
