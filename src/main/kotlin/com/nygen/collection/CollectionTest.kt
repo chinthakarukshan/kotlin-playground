@@ -38,4 +38,11 @@ fun main(args: Array<String>) {
     println()
     mutableShopping.forEach { print(",$it") }
 
+    val toAdd = listOf("Cookies", "Sugar")
+
+    mutableShopping.addAll(toAdd)
+
+    println()
+    mutableShopping.forEach { print(",$it") }
+
 }
