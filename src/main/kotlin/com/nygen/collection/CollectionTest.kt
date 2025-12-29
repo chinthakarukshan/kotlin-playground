@@ -29,4 +29,13 @@ fun main(args: Array<String>) {
     }
     println()
     mutableShopping.forEach { print(",$it") }
+
+    mutableShopping.sort()
+    println()
+    mutableShopping.forEach { print(",$it") }
+
+    mutableShopping.reverse()
+    println()
+    mutableShopping.forEach { print(",$it") }
+
 }
