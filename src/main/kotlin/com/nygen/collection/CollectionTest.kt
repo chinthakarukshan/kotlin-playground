@@ -49,4 +49,8 @@ fun main(args: Array<String>) {
     println()
     mutableShopping.forEach { print(",$it") }
 
+    val friendSet = setOf("Nuwan","Damitha","Nalaka")
+    println()
+    friendSet.forEach { print(", $it") }
+
 }
