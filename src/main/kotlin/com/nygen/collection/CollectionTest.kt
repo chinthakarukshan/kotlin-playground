@@ -53,4 +53,17 @@ fun main(args: Array<String>) {
     println()
     friendSet.forEach { print(", $it") }
 
+    val mFriendSet = mutableSetOf("Jim","Sue")
+    println()
+    mFriendSet.forEach { print(", $it") }
+
+    mFriendSet.add("Nuhan")
+    println()
+    mFriendSet.forEach { print(", $it") }
+
+    mFriendSet.remove("Jim")
+    println()
+    mFriendSet.forEach { print(", $it") }
+
+
 }
