@@ -65,5 +65,10 @@ fun main(args: Array<String>) {
     println()
     mFriendSet.forEach { print(", $it") }
 
+    val newFriends = setOf("Joe","Mia")
+    mFriendSet.addAll(newFriends)
+    println()
+    mFriendSet.forEach { print(", $it") }
+
 
 }
