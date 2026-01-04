@@ -70,5 +70,7 @@ fun main(args: Array<String>) {
     println()
     mFriendSet.forEach { print(", $it") }
 
-
+    val newFriendsSnapshot = mFriendSet.toSet()
+    println()
+    newFriendsSnapshot.forEach { print(", $it") }
 }
