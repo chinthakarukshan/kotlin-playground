@@ -81,4 +81,5 @@ fun main(args: Array<String>) {
     val receip03 = Recipe("Dhal tikka", true)
 
     val recipeMap = mapOf("Recipe01" to receip01, "Recipe02" to receip02, "Recipe03" to receip03)
+    val recipeMap02: Map<String, Recipe> = mapOf("Recipe01" to receip01, "Recipe02" to receip02, "Recipe03" to receip03)
 }
