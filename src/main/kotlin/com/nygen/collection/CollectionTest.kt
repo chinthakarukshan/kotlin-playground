@@ -82,4 +82,10 @@ fun main(args: Array<String>) {
 
     val recipeMap = mapOf("Recipe01" to receip01, "Recipe02" to receip02, "Recipe03" to receip03)
     val recipeMap02: Map<String, Recipe> = mapOf("Recipe01" to receip01, "Recipe02" to receip02, "Recipe03" to receip03)
+
+    val receipToCheck = Recipe("Chicken Soup", false)
+
+    if(recipeMap.containsKey("Recipe01")) println("Recipe01 is available in the Map")
+
+    if(recipeMap.containsValue(receipToCheck)) println("Recipe has the value")
 }
