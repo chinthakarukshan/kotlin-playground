@@ -100,4 +100,10 @@ fun main(args: Array<String>) {
     mRecipeMap.put("Recipe03",receip03)
 
     mRecipeMap.remove("Recipe02")
+
+    val mReceipeList = mRecipeMap.toList()
+
+    for(item in mReceipeList) {
+        println("Key is ${item.first} and Value is ${item.second}")
+    }
 }
