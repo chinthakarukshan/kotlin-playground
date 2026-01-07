@@ -1,5 +1,7 @@
 package com.nygen.collection
 
+import com.nygen.restaurant.Recipe
+
 fun main(args: Array<String>) {
     val shopping: List<String> = listOf("Tea","Eggs","Milk")
 
@@ -73,4 +75,10 @@ fun main(args: Array<String>) {
     val newFriendsSnapshot = mFriendSet.toSet()
     println()
     newFriendsSnapshot.forEach { print(", $it") }
+
+    val receip01 = Recipe("Chicken Soup", false)
+    val receip02 = Recipe("Veg soup", true)
+    val receip03 = Recipe("Dhal tikka", true)
+
+    val recipeMap = mapOf("Recipe01" to receip01, "Recipe02" to receip02, "Recipe03" to receip03)
 }
