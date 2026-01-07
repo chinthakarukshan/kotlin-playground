@@ -88,4 +88,7 @@ fun main(args: Array<String>) {
     if(recipeMap.containsKey("Recipe01")) println("Recipe01 is available in the Map")
 
     if(recipeMap.containsValue(receipToCheck)) println("Recipe has the value")
+
+    println(recipeMap02.getValue("Recipe01"))//throws an exception if the key doesn't exist
+    println(recipeMap02.get("Recipe02"))// returns null if the key doesn't exist
 }
