@@ -91,4 +91,8 @@ fun main(args: Array<String>) {
 
     println(recipeMap02.getValue("Recipe01"))//throws an exception if the key doesn't exist
     println(recipeMap02.get("Recipe02"))// returns null if the key doesn't exist
+
+    for((key,value) in recipeMap) {
+        println("key is $key and the value is $value")
+    }
 }
