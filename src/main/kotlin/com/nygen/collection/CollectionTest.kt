@@ -95,4 +95,9 @@ fun main(args: Array<String>) {
     for((key,value) in recipeMap) {
         println("key is $key and the value is $value")
     }
+
+    val mRecipeMap = mutableMapOf("Recipe01" to receip01, "Recipe02" to receip02)
+    mRecipeMap.put("Recipe03",receip03)
+
+    mRecipeMap.remove("Recipe02")
 }
