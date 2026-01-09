@@ -6,4 +6,16 @@ class Contest<T: Pet> {
     fun addScore(t: T, score:Int) {
         if (score >= 0) scores.put(t, score)
     }
+
+    fun getWinners(): MutableSet<T> {
+        val maxScore = scores.values.max()
+        val winners: MutableSet<T> = mutableSetOf()
+        for((key,value) in scores) {
+            if (value == maxScore) {
+                winners.add(key)
+            }
+        }
+
+        return winners
+    }
 }
