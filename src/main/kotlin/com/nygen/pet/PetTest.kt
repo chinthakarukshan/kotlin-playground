@@ -8,4 +8,13 @@ fun main(args: Array<String>) {
     catContest.addScore(Cat("Joy"),35)
 
     val topCat = catContest.getWinners().first()
+    println(topCat.name)
+
+    val openContest = Contest<Pet>()
+
+    openContest.addScore(Cat("Jim"),34)
+    openContest.addScore(Dog("Rick"),24)
+    openContest.addScore(Fish("Dolly"),23)
+
+    println(openContest.getWinners().first().name)
 }
