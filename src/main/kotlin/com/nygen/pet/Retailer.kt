@@ -1,6 +1,6 @@
 package com.nygen.pet
 
-interface Retailer<T> {
+interface Retailer<out T> {
 
     fun sell():T
 }
