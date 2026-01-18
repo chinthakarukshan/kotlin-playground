@@ -21,5 +21,6 @@ fun main(args: Array<String>) {
     val catRetailer1 = CatRetailer()
     val catRetailer2: CatRetailer = CatRetailer()
 
-
+    val dogRetailer: Retailer<Dog> = DogRetailer()
+    val catRetailer: Retailer<Cat> = CatRetailer()
 }
