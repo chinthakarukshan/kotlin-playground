@@ -1,7 +1,8 @@
 package com.nygen.pet
 
 fun main(args: Array<String>) {
-    val catContest = Contest<Cat>()
+    val catVet = Vet<Cat>()
+    val catContest = Contest<Cat>(catVet)
 
     catContest.addScore(Cat("Rexy"), 45)
     catContest.addScore(Cat("Roy"),25)
@@ -10,7 +11,11 @@ fun main(args: Array<String>) {
     val topCat = catContest.getWinners().first()
     println(topCat.name)
 
-    val openContest = Contest<Pet>()
+
+    val fishVet = Vet<Fish>()
+    val petVet = Vet<Pet>()
+
+    val openContest = Contest<Pet>(petVet)
 
     openContest.addScore(Cat("Jim"),34)
     openContest.addScore(Dog("Rick"),24)
