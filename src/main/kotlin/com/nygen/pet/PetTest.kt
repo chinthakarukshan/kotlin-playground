@@ -35,4 +35,6 @@ fun main(args: Array<String>) {
     catVet.treat(Cat("Rummy"))
     fishVet.treat(Fish("Lucky"))
     petVet.treat(Dog("Tommy"))
+
+    val catContest1 = Contest<Cat>(Vet<Pet>())
 }
