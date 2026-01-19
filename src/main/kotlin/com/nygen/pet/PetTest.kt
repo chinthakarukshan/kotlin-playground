@@ -31,4 +31,8 @@ fun main(args: Array<String>) {
 
     val petRetailer: Retailer<Pet> = FishRetailer()
     petRetailer.sell()
+
+    catVet.treat(Cat("Rummy"))
+    fishVet.treat(Fish("Lucky"))
+    petVet.treat(Dog("Tommy"))
 }
