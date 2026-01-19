@@ -1,6 +1,6 @@
 package com.nygen.pet
 
-class Contest<T: Pet>(var vet: Vet<T>) {
+class Contest<T: Pet>(var vet: Vet<in T>) {
     val scores: MutableMap<T, Int> = mutableMapOf()
 
     fun addScore(t: T, score:Int) {
