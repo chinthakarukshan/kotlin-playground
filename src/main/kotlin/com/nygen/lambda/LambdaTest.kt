@@ -10,4 +10,6 @@ fun main(args: Array<String>) {
 
     val result2 = addInts(6,8)
     println(result2)
+
+    val addition: (Int,Int) -> Int
 }
