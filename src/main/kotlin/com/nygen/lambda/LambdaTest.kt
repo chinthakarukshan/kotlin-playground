@@ -13,4 +13,9 @@ fun main(args: Array<String>) {
 
     val addition: (Int,Int) -> Int
     addition = {a:Int,b:Int -> a+b}
+    println(addition(9,8))
+
+    val greeting: () -> String
+    greeting = {"Hello!"}
+    println(greeting())
 }
