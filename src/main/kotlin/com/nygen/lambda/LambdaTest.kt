@@ -12,4 +12,5 @@ fun main(args: Array<String>) {
     println(result2)
 
     val addition: (Int,Int) -> Int
+    addition = {a:Int,b:Int -> a+b}
 }
