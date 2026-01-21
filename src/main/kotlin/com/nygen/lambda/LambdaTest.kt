@@ -21,4 +21,7 @@ fun main(args: Array<String>) {
 
     val addTen : (Int) -> Int = {it+10}
     println(addTen(7))
+
+    val myLambda: () -> Unit = {println("Hi!")}
+    myLambda()
 }
