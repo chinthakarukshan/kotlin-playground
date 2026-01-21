@@ -1,7 +1,13 @@
 package com.nygen.lambda
 
 fun main(args: Array<String>) {
-    {x: Int, y: Int -> x+y}
+    val addInts = {x: Int, y: Int -> x+y}
 
     val addFive = {x:Int -> x+5}
+
+    val result1 = addInts.invoke(4,6)
+    println(result1)
+
+    val result2 = addInts(6,8)
+    println(result2)
 }
