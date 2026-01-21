@@ -19,6 +19,6 @@ fun main(args: Array<String>) {
     greeting = {"Hello!"}
     println(greeting())
 
-    val addTen : (Int) -> Int = {x -> x+10}
+    val addTen : (Int) -> Int = {it+10}
     println(addTen(7))
 }
