@@ -24,6 +24,8 @@ fun main(args: Array<String>) {
 
     val myLambda: () -> Unit = {println("Hi!")}
     myLambda()
+
+    convert(20.0,{c:Double -> c*1.8 +32})
 }
 
 fun convert(x:Double, converter:(Double)->Double) : Double {
