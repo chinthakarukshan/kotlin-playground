@@ -26,6 +26,7 @@ fun main(args: Array<String>) {
     myLambda()
 
     convert(20.0,{c:Double -> c*1.8 +32})
+    val farenhite = convert(20.0){c:Double -> c*1.8 +32}
 }
 
 fun convert(x:Double, converter:(Double)->Double) : Double {
