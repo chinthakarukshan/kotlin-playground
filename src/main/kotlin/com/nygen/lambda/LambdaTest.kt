@@ -27,5 +27,7 @@ fun main(args: Array<String>) {
 }
 
 fun convert(x:Double, converter:(Double)->Double) : Double {
-    return 0.0
+    val result = converter(x)
+    println("$x is converted to $result")
+    return result
 }
