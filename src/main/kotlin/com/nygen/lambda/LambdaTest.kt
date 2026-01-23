@@ -32,6 +32,9 @@ fun main(args: Array<String>) {
 
     val farValue = getConversionLambda("CentigradeToFehrenheit")(5.0)
     println(farValue)
+
+    val kgsToPoundLambda = getConversionLambda("KgsToPounds")
+    convert(6.0, kgsToPoundLambda)
 }
 
 fun convert(x:Double, converter:(Double)->Double) : Double {
