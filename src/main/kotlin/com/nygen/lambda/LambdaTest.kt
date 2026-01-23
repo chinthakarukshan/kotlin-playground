@@ -1,5 +1,7 @@
 package com.nygen.lambda
 
+typealias doubleConvertion = (Double) -> Double
+
 fun main(args: Array<String>) {
     val addInts = {x: Int, y: Int -> x+y}
 
@@ -43,7 +45,7 @@ fun main(args: Array<String>) {
     println(usTons)
 }
 
-fun convert(x:Double, converter:(Double)->Double) : Double {
+fun convert(x:Double, converter:doubleConvertion) : Double {
     val result = converter(x)
     println("$x is converted to $result")
     return result
@@ -55,7 +57,7 @@ fun convertFive(converter:(Int) -> Double): Double {
     return result
 }
 
-fun getConversionLambda(str: String): (Double) -> Double {
+fun getConversionLambda(str: String): doubleConvertion {
     if (str=="CentigradeToFehrenheit") {
         return { it* 1.8 + 32 }
     } else if (str=="KgsToPounds") {
@@ -67,6 +69,6 @@ fun getConversionLambda(str: String): (Double) -> Double {
     }
 }
 
-fun combine(lambda1: (Double) -> Double, lambda2 : (Double) -> Double): (Double) -> Double {
+fun combine(lambda1: doubleConvertion, lambda2 : doubleConvertion): doubleConvertion {
     return {x:Double -> lambda2(lambda1(x))}
 }
