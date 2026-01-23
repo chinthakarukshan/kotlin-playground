@@ -60,3 +60,7 @@ fun getConversionLambda(str: String): (Double) -> Double {
         return {it}
     }
 }
+
+fun combine(lambda1: (Double) -> Double, lambda2 : (Double) -> Double): (Double) -> Double {
+    return {x:Double -> lambda2(lambda1(x))}
+}
