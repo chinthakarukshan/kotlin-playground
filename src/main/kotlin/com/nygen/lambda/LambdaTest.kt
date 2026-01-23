@@ -35,6 +35,12 @@ fun main(args: Array<String>) {
 
     val kgsToPoundLambda = getConversionLambda("KgsToPounds")
     convert(6.0, kgsToPoundLambda)
+
+    val poundsToUSTonsLambda = getConversionLambda("PoundsToUSTons")
+
+    val kgsToUSTonsCombineLambda = combine(kgsToPoundLambda,poundsToUSTonsLambda)
+    val usTons = kgsToUSTonsCombineLambda(1000.0)
+    println(usTons)
 }
 
 fun convert(x:Double, converter:(Double)->Double) : Double {
