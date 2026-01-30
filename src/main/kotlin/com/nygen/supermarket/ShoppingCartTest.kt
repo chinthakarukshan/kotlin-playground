@@ -2,10 +2,10 @@ package com.nygen.supermarket
 
 fun main (args: Array<String>) {
     val groceries = listOf<Grocery>(
-        Grocery("Tomatoes", "Vegetable", "lb",3.0),
-        Grocery("Bagels", "Bakery", "Packets", 1.5),
-        Grocery("Olive oil", "Pantry", "Bottle", 6.0),
-        Grocery("Ice cream", "Frozen", "Pack", 3.0)
+        Grocery("Tomatoes", "Vegetable", "lb",3.0,1),
+        Grocery("Bagels", "Bakery", "Packets", 1.5,1),
+        Grocery("Olive oil", "Pantry", "Bottle", 6.0,1),
+        Grocery("Ice cream", "Frozen", "Pack", 3.0,1)
     )
     println("Expensive Ingredients")
     search(groceries) {i: Grocery -> i.unitPrice > 5}
