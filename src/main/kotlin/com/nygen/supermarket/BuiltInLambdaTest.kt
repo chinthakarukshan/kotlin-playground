@@ -9,5 +9,6 @@ fun main(args: Array<String>) {
         Grocery("Mushroom", "Vegetable", "lb",4.0,1)
     )
 
-
+    val highestUnitPrice = groceries.maxBy { it.unitPrice }
+    println(highestUnitPrice)
 }
