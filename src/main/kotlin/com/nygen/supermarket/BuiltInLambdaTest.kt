@@ -14,4 +14,10 @@ fun main(args: Array<String>) {
 
     val lowestQuantity = groceries.minBy { it.quantity }
     println(lowestQuantity)
+
+    val sumQuantity = groceries.sumOf { it.quantity }
+    println(sumQuantity)
+
+    val totalPrice = groceries.sumOf { it.unitPrice * it.quantity }
+    println(totalPrice)
 }
