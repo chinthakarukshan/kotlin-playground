@@ -32,4 +32,7 @@ fun main(args: Array<String>) {
 
     val intDoubles = ints.map { it * 2 }
     println(intDoubles)
+
+    val groceryNames = groceries.map { it.name }
+    println(groceryNames)
 }
