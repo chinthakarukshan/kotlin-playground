@@ -23,4 +23,7 @@ fun main(args: Array<String>) {
 
     val vegetables = groceries.filter { it.category == "Vegetable" }
     println(vegetables.size)
+
+    val unitPriceOver3 = groceries.filter { it.unitPrice > 3.0 }
+    println(unitPriceOver3.size)
 }
