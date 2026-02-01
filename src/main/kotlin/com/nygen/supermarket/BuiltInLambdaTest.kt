@@ -1,6 +1,9 @@
 package com.nygen.supermarket
 
 fun main(args: Array<String>) {
+
+    val ints = listOf(1,2,3,4)
+
     val groceries = listOf(
         Grocery("Tomatoes", "Vegetable", "lb",3.0,11),
         Grocery("Bagels", "Bakery", "Packets", 1.5,5),
@@ -26,4 +29,7 @@ fun main(args: Array<String>) {
 
     val unitPriceOver3 = groceries.filter { it.unitPrice > 3.0 }
     println(unitPriceOver3.size)
+
+    val intDoubles = ints.map { it * 2 }
+    println(intDoubles)
 }
