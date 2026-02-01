@@ -40,4 +40,8 @@ fun main(args: Array<String>) {
     println(newPrices)
 
     groceries.forEach { println(it.name) }
+
+    var itemNames = ""
+    groceries.forEach { itemNames += "${it.name} " }
+    println(itemNames)
 }
