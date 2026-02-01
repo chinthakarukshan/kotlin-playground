@@ -20,4 +20,7 @@ fun main(args: Array<String>) {
 
     val totalPrice = groceries.sumOf { it.unitPrice * it.quantity }
     println(totalPrice)
+
+    val vegetables = groceries.filter { it.category == "Vegetable" }
+    println(vegetables.size)
 }
