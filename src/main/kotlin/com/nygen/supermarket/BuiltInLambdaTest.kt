@@ -35,4 +35,7 @@ fun main(args: Array<String>) {
 
     val groceryNames = groceries.map { it.name }
     println(groceryNames)
+
+    val newPrices = groceries.filter { it.unitPrice > 3 }.map { it.unitPrice * 2 }
+    println(newPrices)
 }
