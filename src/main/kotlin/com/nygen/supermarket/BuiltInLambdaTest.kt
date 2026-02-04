@@ -45,6 +45,9 @@ fun main(args: Array<String>) {
     groceries.forEach { itemNames += "${it.name} " }
     println(itemNames)
 
-    groceries.groupBy { it.category }.forEach { println(it.key) }
+    groceries.groupBy { it.category }.forEach {
+        println(it.key)
+        it.value.forEach { println(it.name) }
+    }
 
 }
