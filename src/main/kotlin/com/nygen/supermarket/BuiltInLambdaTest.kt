@@ -45,7 +45,6 @@ fun main(args: Array<String>) {
     groceries.forEach { itemNames += "${it.name} " }
     println(itemNames)
 
-    val groupByCategory = groceries.groupBy { it.category }
-    println(groupByCategory.keys)
+    groceries.groupBy { it.category }.forEach { println(it.key) }
 
 }
