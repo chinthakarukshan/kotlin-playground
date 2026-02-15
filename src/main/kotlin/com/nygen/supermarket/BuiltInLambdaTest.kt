@@ -50,4 +50,8 @@ fun main(args: Array<String>) {
         it.value.forEach { println(it.name) }
     }
 
+    val intList = listOf(1,3,5)
+    val sum = intList.fold(0) {sumInts,item -> sumInts + item}
+    println("Fold Results : $sum")
+
 }
