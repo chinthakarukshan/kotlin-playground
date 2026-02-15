@@ -54,4 +54,7 @@ fun main(args: Array<String>) {
     val sum = intList.fold(0) {sumInts,item -> sumInts + item}
     println("Fold Results : $sum")
 
+    val multiplicationResult = intList.fold(1){multiplyResults, item -> multiplyResults * item}
+    println("Fold multiplication result: $multiplicationResult")
+
 }
