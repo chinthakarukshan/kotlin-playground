@@ -74,6 +74,8 @@ fun main(args: Array<String>) {
         println("Sum for ${it.key} is $sum")
     }
 
-
+    groceries.filter { it.unit != "Bottle" }.groupBy { it.unit }.forEach {
+        println("${it.key} to ${it.value}")
+    }
 
 }
