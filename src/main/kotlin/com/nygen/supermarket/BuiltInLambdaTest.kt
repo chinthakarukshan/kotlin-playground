@@ -63,4 +63,7 @@ fun main(args: Array<String>) {
     val balance = groceries.fold(200.0) {tempBalance, groceryItem -> tempBalance - groceryItem.unitPrice * groceryItem.quantity}
     println("Balance payment: $balance")
 
+    val vegetableCost = groceries.filter { it.category == "Vegetable" }.sumOf { it.unitPrice * it.quantity }
+    println("Cost for vegetables: $vegetableCost")
+
 }
