@@ -9,7 +9,7 @@ fun main(args: Array<String>) {
         Grocery("Bagels", "Bakery", "Packets", 1.5,5),
         Grocery("Olive oil", "Pantry", "Bottle", 6.0,10),
         Grocery("Ice cream", "Frozen", "Pack", 3.0,3),
-        Grocery("Mushroom", "Vegetable", "lb",4.0,2)
+        Grocery("Mushroom", "Vegetable", "lb",4.0,1)
     )
 
     val highestUnitPrice = groceries.maxBy { it.unitPrice }
@@ -65,5 +65,8 @@ fun main(args: Array<String>) {
 
     val vegetableCost = groceries.filter { it.category == "Vegetable" }.sumOf { it.unitPrice * it.quantity }
     println("Cost for vegetables: $vegetableCost")
+
+    val lessThanFiveItems = groceries.filter { it.unitPrice * it.quantity < 5 }.map { it.name }
+    println(lessThanFiveItems)
 
 }
