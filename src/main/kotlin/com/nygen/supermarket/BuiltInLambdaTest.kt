@@ -60,4 +60,7 @@ fun main(args: Array<String>) {
     val concatenatedGroceryNames = groceries.fold(""){concateString, item -> concateString + " ${item.name}"}
     println(concatenatedGroceryNames)
 
+    val balance = groceries.fold(200.0) {tempBalance, groceryItem -> tempBalance - groceryItem.unitPrice * groceryItem.quantity}
+    println("Balance payment: $balance")
+
 }
