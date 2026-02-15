@@ -57,4 +57,7 @@ fun main(args: Array<String>) {
     val multiplicationResult = intList.fold(1){multiplyResults, item -> multiplyResults * item}
     println("Fold multiplication result: $multiplicationResult")
 
+    val concatenatedGroceryNames = groceries.fold(""){concateString, item -> concateString + " ${item.name}"}
+    println(concatenatedGroceryNames)
+
 }
