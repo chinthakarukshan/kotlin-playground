@@ -69,4 +69,11 @@ fun main(args: Array<String>) {
     val lessThanFiveItems = groceries.filter { it.unitPrice * it.quantity < 5 }.map { it.name }
     println(lessThanFiveItems)
 
+    groceries.groupBy { it.category }.forEach {
+        val sum = it.value.fold(0.0) {sum, groceryItem -> sum + groceryItem.unitPrice * groceryItem.quantity}
+        println("Sum for ${it.key} is $sum")
+    }
+
+
+
 }
