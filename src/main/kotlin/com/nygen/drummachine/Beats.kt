@@ -1,5 +1,7 @@
 package com.nygen.drummachine
 
+import kotlinx.coroutines.GlobalScope
+import kotlinx.coroutines.launch
 import java.io.File
 import javax.sound.sampled.AudioSystem
 
@@ -29,6 +31,6 @@ fun playSound(file: String) {
 }
 
 fun main(args: Array<String>) {
-    playBeats("x-x-x-x-x-x-", "toms.aiff")
+    GlobalScope.launch{playBeats("x-x-x-x-x-x-", "toms.aiff")}
     playBeats("x-----x-----","crash_cymbal.aiff")
 }
